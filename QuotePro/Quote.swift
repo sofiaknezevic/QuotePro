@@ -9,5 +9,20 @@
 import UIKit
 
 class Quote: NSObject {
+    
+    var quote:String?
+    var author:String?
+    var quotePhoto:Photo?
+    
+    
+ 
+    init(author:String, quote:String)
+    {
+        self.author = author
+        self.quote = quote
+        
+    }
+    
+
 
 }

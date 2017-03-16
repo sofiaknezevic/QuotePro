@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580D32DCC99763B2EDA8A54E /* Pods_QuotePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DF7F9A3274E911C05F4AF5 /* Pods_QuotePro.framework */; };
 		5D220FA61E79B9D4007778AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FA51E79B9D4007778AB /* AppDelegate.swift */; };
 		5D220FAB1E79B9D4007778AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D220FA91E79B9D4007778AB /* Main.storyboard */; };
 		5D220FAD1E79B9D4007778AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D220FAC1E79B9D4007778AB /* Assets.xcassets */; };
@@ -18,7 +19,11 @@
 		5D220FCC1E79BA4A007778AB /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FCB1E79BA4A007778AB /* Quote.swift */; };
 		5D220FCE1E79BA55007778AB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FCD1E79BA55007778AB /* Photo.swift */; };
 		5D220FD01E79BAD5007778AB /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FCF1E79BAD5007778AB /* QuoteView.swift */; };
-		5D220FD41E79BAFC007778AB /* QuoteViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D220FD31E79BAFC007778AB /* QuoteViewXIB.xib */; };
+		5D220FD41E79BAFC007778AB /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D220FD31E79BAFC007778AB /* QuoteView.xib */; };
+		5D220FD91E79C2C7007778AB /* HomeScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FD81E79C2C7007778AB /* HomeScreenTableViewCell.swift */; };
+		5D220FDD1E79CB38007778AB /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FDC1E79CB38007778AB /* ImageManager.swift */; };
+		5D220FDF1E79CB48007778AB /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D220FDE1E79CB48007778AB /* QuoteManager.swift */; };
+		6079A1BB11A701C87BCAA2CF /* Pods_QuoteProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9117B63084DD318FD76151A /* Pods_QuoteProTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09624385A0CD21CF58BE5E83 /* Pods-QuoteProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteProTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuoteProTests/Pods-QuoteProTests.release.xcconfig"; sourceTree = "<group>"; };
+		38271C56E70EABB5DE40BC24 /* Pods-QuotePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.debug.xcconfig"; sourceTree = "<group>"; };
+		39DF7F9A3274E911C05F4AF5 /* Pods_QuotePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D220FA21E79B9D4007778AB /* QuotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D220FA51E79B9D4007778AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D220FAA1E79B9D4007778AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +55,13 @@
 		5D220FCB1E79BA4A007778AB /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		5D220FCD1E79BA55007778AB /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5D220FCF1E79BAD5007778AB /* QuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
-		5D220FD31E79BAFC007778AB /* QuoteViewXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteViewXIB.xib; sourceTree = "<group>"; };
+		5D220FD31E79BAFC007778AB /* QuoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		5D220FD81E79C2C7007778AB /* HomeScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCell.swift; sourceTree = "<group>"; };
+		5D220FDC1E79CB38007778AB /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		5D220FDE1E79CB48007778AB /* QuoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		74C6A3E438FDB8B930241973 /* Pods-QuotePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.release.xcconfig"; sourceTree = "<group>"; };
+		C9117B63084DD318FD76151A /* Pods_QuoteProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6CCFF4229803BC912088D0 /* Pods-QuoteProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuoteProTests/Pods-QuoteProTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580D32DCC99763B2EDA8A54E /* Pods_QuotePro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6079A1BB11A701C87BCAA2CF /* Pods_QuoteProTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2887A862E53247FE483E8152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39DF7F9A3274E911C05F4AF5 /* Pods_QuotePro.framework */,
+				C9117B63084DD318FD76151A /* Pods_QuoteProTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D220F991E79B9D3007778AB = {
 			isa = PBXGroup;
 			children = (
 				5D220FA41E79B9D4007778AB /* QuotePro */,
 				5D220FB91E79B9D4007778AB /* QuoteProTests */,
 				5D220FA31E79B9D4007778AB /* Products */,
+				87E0097BC91FD85DB8FD3207 /* Pods */,
+				2887A862E53247FE483E8152 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +151,8 @@
 			children = (
 				5D220FCB1E79BA4A007778AB /* Quote.swift */,
 				5D220FCD1E79BA55007778AB /* Photo.swift */,
+				5D220FDC1E79CB38007778AB /* ImageManager.swift */,
+				5D220FDE1E79CB48007778AB /* QuoteManager.swift */,
 				5D220FA51E79B9D4007778AB /* AppDelegate.swift */,
 			);
 			name = Models;
@@ -132,10 +161,22 @@
 		5D220FD71E79BBDA007778AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D220FD81E79C2C7007778AB /* HomeScreenTableViewCell.swift */,
 				5D220FCF1E79BAD5007778AB /* QuoteView.swift */,
-				5D220FD31E79BAFC007778AB /* QuoteViewXIB.xib */,
+				5D220FD31E79BAFC007778AB /* QuoteView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		87E0097BC91FD85DB8FD3207 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38271C56E70EABB5DE40BC24 /* Pods-QuotePro.debug.xcconfig */,
+				74C6A3E438FDB8B930241973 /* Pods-QuotePro.release.xcconfig */,
+				DB6CCFF4229803BC912088D0 /* Pods-QuoteProTests.debug.xcconfig */,
+				09624385A0CD21CF58BE5E83 /* Pods-QuoteProTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D220FBF1E79B9D4007778AB /* Build configuration list for PBXNativeTarget "QuotePro" */;
 			buildPhases = (
+				D25A0E95FC96B0BDA761A7FC /* [CP] Check Pods Manifest.lock */,
 				5D220F9E1E79B9D3007778AB /* Sources */,
 				5D220F9F1E79B9D3007778AB /* Frameworks */,
 				5D220FA01E79B9D3007778AB /* Resources */,
+				90BAB39DB5F0F0FCBD4DB620 /* [CP] Embed Pods Frameworks */,
+				ECC933CDACFF1FA7A6A65E10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D220FC21E79B9D4007778AB /* Build configuration list for PBXNativeTarget "QuoteProTests" */;
 			buildPhases = (
+				67A2348A21E079F0B0E11CE2 /* [CP] Check Pods Manifest.lock */,
 				5D220FB21E79B9D4007778AB /* Sources */,
 				5D220FB31E79B9D4007778AB /* Frameworks */,
 				5D220FB41E79B9D4007778AB /* Resources */,
+				BEFB313BE43FB9D9FC4DE66C /* [CP] Embed Pods Frameworks */,
+				9AE9AB650EE56E07B45CF166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D220FB01E79B9D4007778AB /* LaunchScreen.storyboard in Resources */,
-				5D220FD41E79BAFC007778AB /* QuoteViewXIB.xib in Resources */,
+				5D220FD41E79BAFC007778AB /* QuoteView.xib in Resources */,
 				5D220FAD1E79B9D4007778AB /* Assets.xcassets in Resources */,
 				5D220FAB1E79B9D4007778AB /* Main.storyboard in Resources */,
 			);
@@ -239,15 +286,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67A2348A21E079F0B0E11CE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90BAB39DB5F0F0FCBD4DB620 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE9AB650EE56E07B45CF166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoteProTests/Pods-QuoteProTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFB313BE43FB9D9FC4DE66C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoteProTests/Pods-QuoteProTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25A0E95FC96B0BDA761A7FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC933CDACFF1FA7A6A65E10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D220F9E1E79B9D3007778AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D220FDF1E79CB48007778AB /* QuoteManager.swift in Sources */,
 				5D220FCE1E79BA55007778AB /* Photo.swift in Sources */,
 				5D220FC61E79BA02007778AB /* QuoteBuilderViewController.swift in Sources */,
 				5D220FA61E79B9D4007778AB /* AppDelegate.swift in Sources */,
+				5D220FDD1E79CB38007778AB /* ImageManager.swift in Sources */,
 				5D220FC81E79BA24007778AB /* HomeScreenViewController.swift in Sources */,
+				5D220FD91E79C2C7007778AB /* HomeScreenTableViewCell.swift in Sources */,
 				5D220FD01E79BAD5007778AB /* QuoteView.swift in Sources */,
 				5D220FCC1E79BA4A007778AB /* Quote.swift in Sources */,
 				5D220FCA1E79BA39007778AB /* UIActivityViewController.swift in Sources */,
@@ -385,6 +528,7 @@
 		};
 		5D220FC01E79B9D4007778AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38271C56E70EABB5DE40BC24 /* Pods-QuotePro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SKGXTRK4EB;
@@ -398,6 +542,7 @@
 		};
 		5D220FC11E79B9D4007778AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C6A3E438FDB8B930241973 /* Pods-QuotePro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SKGXTRK4EB;
@@ -411,6 +556,7 @@
 		};
 		5D220FC31E79B9D4007778AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6CCFF4229803BC912088D0 /* Pods-QuoteProTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +572,7 @@
 		};
 		5D220FC41E79B9D4007778AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09624385A0CD21CF58BE5E83 /* Pods-QuoteProTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +605,7 @@
 				5D220FC11E79B9D4007778AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D220FC21E79B9D4007778AB /* Build configuration list for PBXNativeTarget "QuoteProTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +614,7 @@
 				5D220FC41E79B9D4007778AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

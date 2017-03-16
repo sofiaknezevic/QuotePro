@@ -8,11 +8,27 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController
+{
+    
+    private let quoteBuilderIdentifier = "showQuoteBuilder"
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
+        let addButton = UIBarButtonItem(title: "+",
+                                        style: UIBarButtonItemStyle.plain,
+                                        target: self,
+                                        action: #selector(insertNewQuote))
+        
+        
+        self.navigationItem.rightBarButtonItem = addButton
+    }
+
+    func insertNewQuote() -> Void
+    {
+        performSegue(withIdentifier: quoteBuilderIdentifier, sender: self)
     }
 
 

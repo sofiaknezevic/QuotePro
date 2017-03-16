@@ -1,5 +1,5 @@
 //
-//  Photo.swift
+//  HomeScreenTableViewCell.swift
 //  QuotePro
 //
 //  Created by Sofia Knezevic on 2017-03-15.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class Photo: NSObject {
-    
-    var photo:UIImage?
-    
-    init(photo:UIImage){
-        
-        self.photo = photo
+class HomeScreenTableViewCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
     }
+
 
 }
