@@ -33,43 +33,40 @@ class QuoteManager: NSObject
             guard let data = data else
             {
                 
-                print("no data returned from server \(error?.localizedDescription)")
+                print("No data, \(error?.localizedDescription)")
                 return
             }
             guard let resp = response as? HTTPURLResponse else
             {
                 
-                print("no response returned from server \(error)")
+                print("No response, \(error)")
                 return
             }
             
             guard resp.statusCode == 200 else
             {
                 
-                print("an error occurred with status code \(resp.statusCode)")
+                print(resp.statusCode)
                 return
             }
             
             var jsonObject:[String: String]?
             
-            do {
+            do { jsonObject = try JSONSerialization.jsonObject(with: data) as? Dictionary<String, String> }
                 
-                jsonObject = try JSONSerialization.jsonObject(with: data) as? Dictionary<String, String>
-            }
-            catch {
-                print(error.localizedDescription)
-            }
+            catch { print(error.localizedDescription) }
             
             guard let json = jsonObject else {
-                print("Json could not be downcast")
+                
+                print("Error with JSON!")
                 return
             }
             
-            let quoteText = json["quoteText"] ?? "No Text!"
+            let quoteText = json["quoteText"]!
             
-            let quoteAuthor = json["quoteAuthor"] ?? "Anonymous"
+            let quoteAuthor = json["quoteAuthor"]!
             
-            let quote = Quote(author: quoteAuthor, quote: quoteText)
+            let quote = Quote(quote: quoteText, author: quoteAuthor)
             self.quotes.append(quote)
             
             completionHandler(quote)

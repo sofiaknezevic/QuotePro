@@ -19,7 +19,6 @@ class QuoteView: UIView {
     
     func setUpViewWithQuote(quote:Quote) -> Void {
         
-
         photoView.image = quote.quotePhoto?.photo
         quoteLabel.text = quote.quote
         authorLabel.text = quote.author

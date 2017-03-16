@@ -16,7 +16,7 @@ class Quote: NSObject {
     
     
  
-    init(author:String, quote:String)
+    init(quote:String, author:String)
     {
         self.author = author
         self.quote = quote

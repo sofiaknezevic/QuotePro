@@ -34,10 +34,10 @@ class QuoteBuilderViewController: UIViewController {
 
     @IBAction func generateQuote(_ sender: UIButton)
     {
-        QuoteManager.sharedInstance.getRandomQuote{ [unowned self](quote:Quote) in
+        QuoteManager.sharedInstance.getRandomQuote{(quote:Quote) in
 
             DispatchQueue.main.async {
-                self.quoteBuilderLabel.text = quote.author
+                self.quoteBuilderLabel.text = quote.quote
                 self.quote = quote
             }
         }
@@ -46,14 +46,13 @@ class QuoteBuilderViewController: UIViewController {
 
     @IBAction func generateImage(_ sender: UIButton)
     {
-        ImageManager.sharedInstance.getRandomPhoto{ [unowned self](photo:Photo) in
+        ImageManager.sharedInstance.getRandomPhoto{(photo:Photo) in
             
             DispatchQueue.main.async {
                 
                 self.builderPhotoView.image = photo.photo
                 self.photo = photo
-                self.quote?.quotePhoto = photo
-                
+            
             }
 
         }
@@ -63,12 +62,17 @@ class QuoteBuilderViewController: UIViewController {
     @IBAction func saveButton(_ sender: UIButton)
     {
         
-        QuoteManager.sharedInstance.quotes.append(quote!)
+        guard let photo = photo else {return}
         
-        ImageManager.sharedInstance.photos.append(photo!)
+        ImageManager.sharedInstance.photos.append(photo)
         
-        quoteView?.setUpViewWithQuote(quote: quote!)
-
+        self.quote?.quotePhoto = photo
+        
+        guard let quote = quote else {return}
+        
+        QuoteManager.sharedInstance.quotes.append(quote)
+        
+        quoteView?.setUpViewWithQuote(quote: quote)
         
     }
 
