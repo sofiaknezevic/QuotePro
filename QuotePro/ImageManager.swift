@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Nuke
 
 class ImageManager: NSObject
 {
@@ -32,20 +31,20 @@ class ImageManager: NSObject
             guard let data = data else
             {
                 
-                print("no data returned from server \(error?.localizedDescription)")
+                print("No data \(error?.localizedDescription)")
                 return
             }
             guard let resp = response as? HTTPURLResponse else
             {
                 
-                print("no response returned from server \(error)")
+                print("No response \(error)")
                 return
             }
             
             guard resp.statusCode == 200 else
             {
                 
-                print("an error occurred with status code \(resp.statusCode)")
+                print(resp.statusCode)
                 return
             }
             
