@@ -19,6 +19,7 @@ class QuoteBuilderViewController: UIViewController {
     
     var quote:Quote?
     var photo:Photo?
+    var image:UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class QuoteBuilderViewController: UIViewController {
         
         quoteView?.frame.size = previewView.frame.size
         previewView.addSubview(quoteView!)
+        
         
     }
 
@@ -74,6 +76,22 @@ class QuoteBuilderViewController: UIViewController {
         
         quoteView?.setUpViewWithQuote(quote: quote)
         
+        let image = self.snapshot(quoteView: quoteView!)
+        
+        self.quote?.snapshotImage = image
+        
+        
+    }
+    
+    func snapshot(quoteView: QuoteView) -> UIImage {
+        
+        UIGraphicsBeginImageContextWithOptions(quoteView.bounds.size, true, 0)
+        quoteView.drawHierarchy(in: quoteView.bounds, afterScreenUpdates: true)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image!
     }
 
 }

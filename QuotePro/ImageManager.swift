@@ -50,7 +50,6 @@ class ImageManager: NSObject
             
             let photo = Photo(photo: UIImage(data: data)!)
             
-            self.photos.append(photo)
             
             completionHandler(photo)
         }

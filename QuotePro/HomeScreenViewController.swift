@@ -8,10 +8,14 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController
+class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
+
 {
     
     private let quoteBuilderIdentifier = "showQuoteBuilder"
+    
+    @IBOutlet weak var tableView: UITableView!
+
 
     override func viewDidLoad()
     {
@@ -24,6 +28,18 @@ class HomeScreenViewController: UIViewController
         
         
         self.navigationItem.rightBarButtonItem = addButton
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        self.insertNewQuote()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(true)
+        
+        self.tableView.reloadData()
+        
     }
 
     func insertNewQuote() -> Void
@@ -32,5 +48,29 @@ class HomeScreenViewController: UIViewController
     }
 
 
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        
+        return 1
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        
+        return QuoteManager.sharedInstance.quotes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? HomeScreenTableViewCell
+        
+        let quote = QuoteManager.sharedInstance.quotes[indexPath.row]
+        cell?.configureCellWithQuote(quote: quote)
+        
+        return cell!
+    }
+    
 
 }

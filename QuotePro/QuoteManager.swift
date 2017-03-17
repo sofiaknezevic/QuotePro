@@ -66,11 +66,10 @@ class QuoteManager: NSObject
             let quoteAuthor = json["quoteAuthor"]!
             
             let quote = Quote(quote: quoteText, author: quoteAuthor)
-            self.quotes.append(quote)
             
             completionHandler(quote)
         }
-        dataTask.resume()
+     dataTask.resume()
     }
     
 }
